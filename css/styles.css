@@ -1025,8 +1025,73 @@ color: var(--accent-color)
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* modal window */
 
+.footer-div {
+    margin-left: 93px;
+}
+.subscribe {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+
+        margin-bottom: 20px;
+}
+
+.input-footer:hover {
+    border-color: #2196F3;
+}
+.input-footer {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2F303A;
+    width: 358px;
+    height: 50px;
+
+    transition-duration: 250ms;
+    transition-property:border-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.submit-btn {
+    padding: 0;
+    margin-left: 12px;
+    width: 200px;
+    height: 50px;
+    
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #FFFFFF;
+    border: none;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+}
+.input-footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 0;
+    padding-left: 16px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* modal window */
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
@@ -1202,6 +1267,9 @@ margin-bottom: 30px;
     bottom: 11px;
     left: 13.5px;
 }
+.register-form-icon {
+    fill: #000000;
+}
 .register-form-field {
     position: relative;
 }
@@ -1231,4 +1299,16 @@ margin-bottom: 30px;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: border-color;
     border-radius: 4px;
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
