@@ -512,6 +512,9 @@ max-width: 700px;
     transition-property: fill;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.social-icons-telegram {
+    margin-left: 10px;
+}
 .team-box {
     
     box-sizing: border-box;
@@ -1139,6 +1142,14 @@ color: var(--accent-color)
     width: 30px;
     height: 30px;
     cursor: pointer;
+
+    align-items: center;
+    justify-content: center;
+}
+.icon-close-black{
+
+    align-items: center;
+    justify-content: center;
 }
 .icon-close-black {
     fill: black;
@@ -1194,6 +1205,7 @@ color: var(--accent-color)
     margin-bottom: 12px;
 }
 .registers-contacts {
+
     display: block;
     font-family: 'Roboto';
         font-style: normal;
@@ -1217,6 +1229,7 @@ color: var(--accent-color)
         margin-bottom: 4px;
 }
 .register-form-field {
+    position: relative;
     display: block;
     margin-bottom: 10px;
 
@@ -1270,9 +1283,7 @@ margin-bottom: 30px;
 .register-form-icon {
     fill: #000000;
 }
-.register-form-field {
-    position: relative;
-}
+
 .register-form-field:last-child {
     margin-bottom: 0;
 }
