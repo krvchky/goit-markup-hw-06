@@ -720,6 +720,7 @@ body {
 
  
 .modal-btn {
+    background: #F5F4FA;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -769,6 +770,10 @@ body {
 
 
 /* ПОРТФОЛІО,СEРЕДИНА З ФОТО */
+.overlay.overlay-is-hidden {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .reference {
     text-decoration: none;
     display:block;
@@ -798,10 +803,11 @@ body {
     justify-content: center;
 
     background-color: rgba(33, 150, 243, 0.9);
-    transition: cubic-bezier(0.4, 0, 0.2, 1);;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.flex-photos:hover .overlay
+.flex-photos:hover .overlay,
+.flex-photos:focus .overlay
 {
     transform: translateY(0);
     transition-duration: 250ms;
@@ -834,7 +840,6 @@ body {
     padding-right: 24px;
     border: 1px solid rgba(238, 238, 238, 1);
 }
-
 
 
 .project {
@@ -1056,7 +1061,8 @@ color: var(--accent-color)
         margin-bottom: 20px;
 }
 
-.input-footer:hover {
+.input-footer:hover,
+.input-footer:focus {
     border-color: #2196F3;
 }
 
@@ -1116,6 +1122,7 @@ color: var(--accent-color)
 
 
 /* modal window */
+
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
