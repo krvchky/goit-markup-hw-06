@@ -513,7 +513,11 @@ max-width: 700px;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icons-telegram {
+    position: absolute;
     margin-left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+   
 }
 .team-box {
     
@@ -772,12 +776,16 @@ body {
     transition-property: box-shadow;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.port-img {
+    display: flex;
+}
 .card-thumb {
     position: relative;
     overflow: hidden;
 }
 
 .overlay {
+    display: flex;
     position: absolute;
     top: 0;
     left: 0;
@@ -790,7 +798,7 @@ body {
     justify-content: center;
 
     background-color: rgba(33, 150, 243, 0.9);
-    ;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .flex-photos:hover .overlay
@@ -824,9 +832,7 @@ body {
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
-    border-bottom: 1px solid rgba(238, 238, 238, 1);
-    border-left: 1px solid rgba(238, 238, 238, 1);
-    border-right:1px solid rgba(238, 238, 238, 1) ;
+    border: 1px solid rgba(238, 238, 238, 1);
 }
 
 
@@ -982,6 +988,10 @@ color: var(--accent-color)
     display: flex;
     align-items: baseline;
 }
+.join {
+    margin-right: 93px;
+
+}
 .footer_cont {
     margin-right: 70px;
 }
@@ -1030,7 +1040,7 @@ color: var(--accent-color)
 
 
 .footer-div {
-    margin-left: 93px;
+    margin-left: auto;
 }
 .subscribe {
     font-family: 'Roboto';
@@ -1049,19 +1059,19 @@ color: var(--accent-color)
 .input-footer:hover {
     border-color: #2196F3;
 }
-.input-footer {
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    background-color: #2F303A;
-    width: 358px;
-    height: 50px;
 
-    transition-duration: 250ms;
-    transition-property:border-color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.subscribe-btn {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.8;
+    
+        color: #FFFFFF;
+        margin-left: -29px;
 }
 .submit-btn {
+    position: relative;
     padding: 0;
     margin-left: 12px;
     width: 200px;
@@ -1085,13 +1095,24 @@ color: var(--accent-color)
     padding-right: 0;
     padding-left: 16px;
 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));    border-radius: 4px;
+    background-color: #2F303A;
+    width: 358px;
+    height: 50px;
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
+
+    transition-duration: 250ms;
+    transition-property: border-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 
 /* modal window */
@@ -1144,16 +1165,18 @@ color: var(--accent-color)
     cursor: pointer;
 
     align-items: center;
+    display: flex;
     justify-content: center;
-}
-.icon-close-black{
 
-    align-items: center;
-    justify-content: center;
+    transition-duration: 250ms;
+    transition-property: border-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-close-black {
-    fill: black;
+.btn-modal:hover,
+.btn-modal:focus {
+    border-color:var(--accent-color)
 }
+
 
 .is-hidden {
     transition-duration: 250ms;
@@ -1229,14 +1252,11 @@ color: var(--accent-color)
         margin-bottom: 4px;
 }
 .register-form-field {
-    position: relative;
     display: block;
     margin-bottom: 10px;
-
 }
-
-.icon-checked {
-    fill: #2196F3;
+.icon-unchecked {
+    fill: #000000;
 }
 
 .register-form-group {
@@ -1253,7 +1273,11 @@ margin-bottom: 30px;
     display: block;
     margin: 0 auto;
 }
+.register-div {
+    position: relative;
+}
 .register-form-input {
+    position: relative;
     width: 100%;
     height: 40px;
     padding-left: 42px;
@@ -1267,11 +1291,23 @@ margin-bottom: 30px;
     transition-property: border-color;
     outline: transparent;
 }
-.register-form-input:hover {
+.register-form-input:hover,
+.register-form-input:focus {
     border-color: #2196F3;
 }
-.register-form-message:hover {
+.register-form-message:hover,
+.register-form-message:focus {
     border-color: #2196F3;
+}
+.icon-close-black {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill;
+}
+.icon-close-black:hover,
+.icon-close-black:focus {
+    fill: #2196F3;
+
 }
 .register-form-icon {
     position: absolute;
@@ -1279,11 +1315,22 @@ margin-bottom: 30px;
     transform: translateY(-50%);
     bottom: 11px;
     left: 13.5px;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill;
+    fill: var(--title-text-color);
 }
-.register-form-icon {
-    fill: #000000;
+.register-form-icon:hover, 
+.register-form-icon:focus{
+fill: #2196F3;
 }
 
+.register-form-input:hover,
+.register-form-input:focus {
+    fill: #2196F3;
+    border-color: #2196F3;
+}
 .register-form-field:last-child {
     margin-bottom: 0;
 }
