@@ -1192,6 +1192,20 @@ color: var(--accent-color)
 
 
 /* REGISTER FORM*/
+.btn-modal:hover ~ .icon-close-black-18dp-2-1, 
+.btn-modal:focus ~ .icon-close-black-18dp-2-1{
+border-color: #2196F3;
+fill: #2196F3;
+}
+.icon-close-black-18dp-2-1:hover,
+.icon-close-black-18dp-2-1:focus{
+    fill: #2196F3;
+}
+.icon-close-black-18dp-2-1 {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill;
+}
 
 .register-form-btn {
     width: 200px;
@@ -1262,10 +1276,23 @@ color: var(--accent-color)
     display: block;
     margin-bottom: 10px;
 }
-.icon-unchecked {
-    fill: #000000;
-}
 
+.icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border:2px solid black;
+    border-radius: 3px;
+}
+.register-form-checkbox:checked + .icon {
+background-color: #2196F3;
+background-image: url(../images/symbol-defs.svg#icon-Vector7);
+background-size: contain;
+background-origin: border-box;
+}
+.icon-Vector7 {
+    fill: #fff;
+}
 .register-form-group {
     margin-bottom: 20px;
 }
@@ -1283,6 +1310,13 @@ margin-bottom: 30px;
 .register-div {
     position: relative;
 }
+
+
+.register-form-input:hover ~.register-form-icon,
+.register-form-input:focus ~.register-form-icon {
+    border-color: #2196F3;
+    fill: #2196F3;
+}
 .register-form-input {
     position: relative;
     width: 100%;
@@ -1295,27 +1329,15 @@ margin-bottom: 30px;
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: border-color;
+    transition-property: border-color fill;
     outline: transparent;
 }
-.register-form-input:hover,
-.register-form-input:focus {
-    border-color: #2196F3;
-}
+
 .register-form-message:hover,
 .register-form-message:focus {
     border-color: #2196F3;
 }
-.icon-close-black {
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: fill;
-}
-.icon-close-black:hover,
-.icon-close-black:focus {
-    fill: #2196F3;
 
-}
 .register-form-icon {
     position: absolute;
     top: 50%;
