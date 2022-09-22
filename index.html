@@ -13,35 +13,37 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header class="page-header">
-        <div class="container">
+    <header class="header">
+        <div class="header-container container">
                 <nav class="navi">
-                    <a class="logo" href="./index.html"><span>Web</span>Studio</a>
+                    <a class="logo" href="./index.html">
+                        <span class="logo__dark">Web</span>Studio
+                    </a>
                     <ul class="site-nav">
-                        <li class="item">
-                            <a class="link current" href="./portfolio.html">Студия</a>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link link-current" href="./portfolio.html">Студия</a>
                         </li>
-                        <li class="item">
-                            <a class="link" href="./portfolio.html">Портфолио</a>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
                         </li>
-                        <li class="item">
-                            <a class="link" href="/">Контакты</a>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="/">Контакты</a>
                         </li>
                     </ul>
                 </nav>
 
                 <ul class="contacts">
-                    <li class="item icon-mail">
-                        <a class="mail" href="emailto:info@devstudio.com">
-                            <svg class="icon-contacts" height="12" width="16">
+                    <li class="contacts__icon-mail">
+                        <a class="contacts__mail" href="emailto:info@devstudio.com">
+                            <svg class="contacts__icon-contacts" height="12" width="16">
                                 <use href="./images/symbol-defs.svg#icon-mail" />
                             </svg>
                             info@devstudio.com
                         </a>
                     </li>
-                    <li class="item icon-tel">
-                        <a class="phone-number" href="tel:+380961111111">
-                            <svg class="icon-contacts" height="16" width="10">
+                    <li class="contacts__icon-tel">
+                        <a class="contacts__phone-number" href="tel:+380961111111">
+                            <svg class="contacts__icon-contacts" height="16" width="10">
                                 <use href="./images/symbol-defs.svg#icon-tel" />
                             </svg>
                              +38 096 111 11 11 
@@ -53,60 +55,63 @@
 
     <main>
         <section class="hero">
-            <div class="container hero_container">
+            <div class="hero_container container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                 <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
                 </div>
         </section>
 
-        
         <section class="main_middle">
-            <div class="container main_container"> 
-            <ul class="points">
-            <li class="middle icon-antenna">
-                <div class="icon-el">
-                    <svg class="icon-antenna" width="70" height="70">
+            <div class="main_container container"> 
+
+            <ul class="list">
+            <li class="list__middle ">
+                <div class="list__icon-el">
+                    <svg width="70" height="70">
                         <use href="./images/symbol-defs.svg#icon-antenna"></use>
                         </svg>
                 </div>
-                <h3 class="headlines">Внимание к деталям</h3>
-                <p class="paragraph">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-        
+                <h3 class="list__headlines">Внимание к деталям</h3>
+                <p class="list__paragraph">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
-            <li class="middle icon-clock">
-                <div class="icon-el">
-                    <svg class="icon-antenna" width="70" height="70">
+
+            <li class="list__middle ">
+                <div class="list__icon-el">
+                    <svg  width="70" height="70">
                         <use href="./images/symbol-defs.svg#icon-clock"></use>
                     </svg>
                 </div>
-                <h2 class="headlines">Пунктуальность</h2>
-                <p class="paragraph">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                <h2 class="list__headlines">Пунктуальность</h2>
+                <p class="list__paragraph">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
-            <li class="middle icon-schedule">
-                <div class="icon-el">
-                    <svg class="icon-antenna" width="70" height="70">
+
+            <li class="list__middle">
+                <div class="list__icon-el">
+                    <svg  width="70" height="70">
                         <use href="./images/symbol-defs.svg#icon-diagram"></use>
                     </svg>
                 </div>
-                <h2 class="headlines">Планирование</h2>
-                <p class="paragraph">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                <h2 class="list__headlines">Планирование</h2>
+                <p class="list__paragraph">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
-            <li class="middle icon-astronaut">
-                <div class="icon-el">
-                    <svg class="icon-antenna" width="70" height="70">
+
+            <li class="list__middle ">
+                <div class="list__icon-el">
+                    <svg width="70" height="70">
                         <use href="./images/symbol-defs.svg#icon-astronaut"></use>
                     </svg>
                 </div>
-                <h2 class="headlines">Современные технологии</h2>
-                <p class="paragraph">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-        
+                <h2 class="list__headlines">Современные технологии</h2>
+                <p class="list__paragraph">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
+
         </ul>
+
         </div>
         </section>
         <section class="main_center">
-            <div class="container photo_container">
-            <h2 class="second-headlines">Чим ми займаємося</h2>
+            <div class="photo_container container">
+            <h2 class="caption">Чим ми займаємося</h2>
             <ul class="main_photos" >
                 <li class="photos">
                     <img src="./images/photo.jpg" width="370" alt="Верстка">
@@ -348,7 +353,8 @@
         <div class=" container container_footer">
             <div class="footer_cont">
                 <a class="footer-logo" href="">
-                    <span>Web</span>Studio</a>
+                    <span class="logo__light">Web</span>Studio
+                </a>
                 <address class="just-contacts">
                     <ul class="footer-contacts">
                         <li class="cont">
